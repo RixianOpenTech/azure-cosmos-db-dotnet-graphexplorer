@@ -27,7 +27,7 @@ function configureOauth(oauthService: OAuthService, oauthTokenService: OAuthToke
             loginUrl: 'https://login.microsoftonline.com/{TenantId}/oauth2/authorize',
             logoutUrl: 'https://login.microsoftonline.com/{TenantId}/oauth2/authorize',
             clientId: '{ApplicationId}',
-            alwaysRequireLogin: false
+            alwaysRequireLogin: true
         });
 
     configureClient(client);
