@@ -50,5 +50,11 @@
     "build": {
       "includeDependencies": "aurelia-*"
     }
+  },
+  "scripts": {
+    "fullbuild": "npm install && webpack --config webpack.config.vendor.js && webpack",
+    "vendorbuild": "webpack --config webpack.config.vendor.js",
+    "build": "webpack",
+    "dev": "dotnet run Development"
   }
 }
